@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>m0n1t0r page</title>
+	<title>Test page</title>
 	<link rel="stylesheet" href="css/supervision.css" media="all" type="text/css"/>
 	<link rel="stylesheet" href="css/test.css" media="all" type="text/css"/>
 </head>
@@ -10,20 +10,9 @@
 <script type="text/javascript" >
 $(document).ready( function()
 {
-
-    /*
-     * Load status from nagios/icinga server or local json file for testing
-     */
-
+    // Load status from nagios/icinga server or local json file for testing
     myicinga.show_svc({ "divId":"#svc" , "test":"test/alerts.json" });
     // myicinga.show_svc({ "divId":"#svc" , "test":"test/error.json" });
-
-	// setInterval ( "myicinga.show_svc({ \"divId\":\"#svc\" })", 15 * 1000); // 15 sec
-
-	function frameReload( name){
-		$(name).attr("src",$(name).attr("src")) ;
-	}
-
 })
 </script>
 <div class="svc" id="svc"></div>

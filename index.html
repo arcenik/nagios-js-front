@@ -5,34 +5,20 @@
 	<link rel="stylesheet" href="css/supervision-horiz.css" media="all" type="text/css"/>
 </head>
 <body class="top">
-
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="js/myicinga.js"></script>
-
 <script type="text/javascript" >
 $(document).ready( function()
 {
-    /*
-     * Load status from nagios/icinga server or local json file for testing
-     */
-
+    // Load status from nagios/icinga server or local json file for testing
     myicinga.show_svc({ "divId":"#svc", "login":"monitor", "passw":"monitor", "hb":"#date" });
 
+    // set refresh to 15 seconds
 	setInterval ( "myicinga.show_svc({ \"divId\":\"#svc\", \"login\":\"monitor\", \"passw\":\"monitor\", \"hb\":\"#date\" })", 15 * 1000); // 15 sec
-
 })
 </script>
-
 <div class="svc" id="svc"></div>
-
-
-<div class="graph2" id="graph2"></div>
-<div class="graph1" id="graph1"></div>
-
-
 <div class="date" id="date"></div>
-
-
 </body>
 </html>
 <!-- 
