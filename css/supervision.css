@@ -1,0 +1,167 @@
+/* mains divs -------------------------------------------------------------- */
+body
+{
+	background-color:	#000;
+	color:		#fff;
+}
+
+.top
+{
+	margin:			0px;
+	border:			0px;
+	overflow:		hidden;
+}
+
+.date
+{
+	background-color:	#000;
+	overflow:		hidden;
+	border:			0px;
+	width:			100%;
+	height:			45px;
+	position:		absolute;
+	bottom:			0px;
+	left:			0px;
+	font: 32px bold "Arial";
+    filter:alpha(opacity=85);
+    -moz-opacity:   0.85;
+    opacity:        0.85; 
+}
+
+.cont
+{
+	width:			100%;
+	height:			100%;
+	border:			0px;
+}
+
+.svc
+{
+	position:		absolute;
+	top:			0px;
+	left:			0px;
+	width:			100%;
+	height:			100%;
+}
+
+/* alert colors and settings ----------------------------------------------- */
+.alerts
+{
+	white-space: normal;
+	display: inline;
+	margin: 2px;
+	font: 40px "Arial";
+	line-height: 55px;
+	color: #FFF;
+	text-shadow: 2px 2px #000;
+}
+
+a:link {color:#fff;}
+a:visited {color:#fff;}
+a:hover {color:#fff;}
+a:active {color:#fff;}
+
+
+.alert_CRITICAL
+{
+	background-color:	#ff7777;
+}
+
+.alert_WARNING
+{
+	background-color:	#ffa566;
+}
+
+.alert_UNKNOWN
+{
+	background-color:	#e077ff;
+}
+
+.alert_RECOVERY
+{
+	background-color:	#00ccee;
+}
+
+.alert_PENDING
+{
+	background-color:	#acacac;
+}
+
+.alert_OK
+{
+	background-color:	#00cc33;
+}
+
+.alert_DOWNTIME
+{
+	background-color:	#acacac;
+}
+
+.hostname 
+{
+	font: 24px bold;
+	white-space:	nowrap;
+	vertical-align:text-top;
+	font: 48px "Arial";
+}
+
+.svctable
+{
+	border:		0;
+	width:		100%;
+	max-width:	100%;
+}
+
+/* tooltip ----------------------------------------------------------------- */
+a.tooltip {
+    outline:none; 
+	text-decoration: none;
+} 
+
+a.tooltip strong {
+    line-height:30px;
+} 
+
+a.tooltip:hover {
+    text-decoration:none;
+} 
+
+a.tooltip span { 
+    z-index:10;
+    display:none; 
+    padding:14px 20px; 
+    margin-top:-30px; 
+    margin-left:28px; 
+    width:240px; 
+    line-height:16px; 
+	font: 18px bold;
+	text-shadow: none;
+} 
+
+a.tooltip:hover span { 
+    display:inline; 
+    position:absolute; 
+    color:#111; 
+    border:1px solid #DCA; 
+    background:#fffAF0;
+} 
+
+.callout {
+    z-index:20;
+    position:absolute;
+    top:30px;
+    border:0;
+    left:-12px;
+} 
+
+
+/*CSS3 extras*/ 
+a.tooltip span { 
+    border-radius:4px; 
+    -moz-border-radius: 4px; 
+    -webkit-border-radius: 4px; 
+    -moz-box-shadow: 5px 5px 8px #CCC; 
+    -webkit-box-shadow: 5px 5px 8px #CCC; 
+    box-shadow: 5px 5px 8px #CCC; 
+}
+

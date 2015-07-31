@@ -1,0 +1,32 @@
+{ "cgi_json_version": "1.11.0",
+"icinga_status": {
+"status_data_age": 1397633790,
+"status_update_interval": 10,
+"reading_status_data_ok": true,
+"program_version": "(null)",
+"icinga_pid": 0,
+"timezone": "CEST",
+"date_format": "euro",
+"program_start": 0,
+"total_running_time": "0",
+"last_external_command_check": 0,
+"last_log_file_rotation": 0,
+"notifications_enabled": false,
+"disable_notifications_expire_time": 0,
+"service_checks_being_executed": false,
+"passive_service_checks_being_accepted": false,
+"host_checks_being_executed": false,
+"passive_host_checks_being_accepted": false,
+"obsessing_over_services": false,
+"obsessing_over_hosts": false,
+"check_service_freshness": false,
+"check_host_freshness": false,
+"event_handlers_enabled": false,
+"flap_detection_enabled": false,
+"performance_data_being_processed": false
+}, 
+"error": {
+"title": "Could not read host and service status information!"
+,"text": "It seems that Icinga is not running or has not yet finished the startup procedure and then creating the status data file. If Icinga is indeed not running, this is a normal error message. Please note that event broker modules and/or rdbms backends may slow down the overall (re)start and the cgis cannot retrieve any status information."
+}
+}
